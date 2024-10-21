@@ -1,0 +1,69 @@
+Install Prerequisites for SonarQube
+sudo apt update
+sudo apt install openjdk-17-jdk
+sudo update-alternatives --config java
+
+
+Install PostgreSQL (Recommended Database)
+sudo apt-get install postgresql postgresql-contrib -y
+
+Once installed, start and configure PostgreSQL
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+
+Create a PostgreSQL user and database for SonarQube
+sudo -i -u postgres
+createuser sonar
+createdb -O sonar sonarqube
+psql
+ALTER USER sonar WITH ENCRYPTED PASSWORD '3121997000123';
+\q
+exit
+
+Install SonarQube
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip
+sudo apt-get install unzip  # (on Ubuntu, if not installed)
+unzip sonarqube-9.9.0.65466.zip
+sudo mv sonarqube-9.9.0.65466 /opt/sonarqube
+
+Configure SonarQube
+sudo nano /opt/sonarqube/conf/sonar.properties
+Uncomment and edit the database-related lines:
+sonar.jdbc.username=sonar
+sonar.jdbc.password=3121997000123
+sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
+
+Create a SonarQube User
+sudo groupadd sonar
+sudo useradd -d /opt/sonarqube -g sonar sonar
+sudo chown -R sonar:sonar /opt/sonarqube
+
+Start SonarQube
+sudo su - sonar
+cd /opt/sonarqube/bin/linux-x86-64/
+./sonar.sh start
+
+Open your browser and go to http://<SonarQube-EC2-IP>:9000
+
+You’ll see the SonarQube web interface. The default login credentials are:
+Username: admin
+Password: admin
+
+Configure SonarQube with Jenkins
+Now that SonarQube is running, we need to integrate it with Jenkins:
+
+Install the SonarQube Plugin in Jenkins:
+
+Go to Manage Jenkins > Manage Plugins > Available.
+Search for the SonarQube Scanner plugin and install it.
+Configure SonarQube in Jenkins:
+
+Go to Manage Jenkins > Configure System.
+Scroll down to the SonarQube servers section.
+Add a new SonarQube server with the following details:
+Name: SonarQube
+Server URL: http://<SonarQube-EC2-IP>:9000
+Authentication Token: You can generate this token in SonarQube under My Account > Security > Generate Tokens
+
+
+
