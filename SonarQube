@@ -65,5 +65,10 @@ Name: SonarQube
 Server URL: http://<SonarQube-EC2-IP>:9000
 Authentication Token: You can generate this token in SonarQube under My Account > Security > Generate Tokens
 
+Configure the SonarQube Scanner:
+
+Go to Manage Jenkins > Global Tool Configuration.
+Under the SonarQube Scanner section, add a new installation.
+
 
 
