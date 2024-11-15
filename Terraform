@@ -1,0 +1,27 @@
+List Available Workspaces: 
+terraform workspace list
+******************************
+Create a dev, staging and prod  workspace: 
+terraform workspace new dev, terraform workspace new staging, terraform workspace new prod
+******************************
+Switch Between Workspaces: 
+terraform workspace select dev
+******************************
+Confirm the Current Workspace: 
+terraform workspace show
+******************************
+Applying the Configuration in Each Workspace:
+terraform workspace select dev, terraform apply
+******************************
+Apply Configuration with Variable File:
+terraform apply -var-file="dev.tfvars"
+******************************
+terraform init
+Initializing the backend...
+╷
+│ Error: Backend configuration changed
+│ 
+│ A change in the backend configuration has been detected, which may require migrating existing state.
+
+Soln: If you wish to attempt automatic migration of the state, use "terraform init -migrate-state"
+******************************
