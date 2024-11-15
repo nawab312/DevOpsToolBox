@@ -24,4 +24,5 @@ Initializing the backend...
 │ A change in the backend configuration has been detected, which may require migrating existing state.
 
 Soln: If you wish to attempt automatic migration of the state, use "terraform init -migrate-state"
+terraform init -migrate-state (This command will move the state file from its current location to the specified backend)
 ******************************
