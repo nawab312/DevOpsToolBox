@@ -1,0 +1,6 @@
+Remove the Existing Container
+  List all running containers to confirm the container ID or name:
+  docker ps -a
+  Stop and remove the existing container:
+  docker stop d3269a096b2c
+  docker rm d3269a096b2c
