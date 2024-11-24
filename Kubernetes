@@ -1,0 +1,4 @@
+HPA for a deployment named autoscale-deploy in the default namespace with the following requirements:
+Target CPU utilization: 50%. Scale between 1 to 5 replicas.
+kubectl autoscale deployment autoscale-deploy --cpu-percent=50 --min=1 --max=5
+*******************************************************************************************
