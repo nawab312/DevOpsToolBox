@@ -4,3 +4,10 @@ Remove the Existing Container
   Stop and remove the existing container:
   docker stop d3269a096b2c
   docker rm d3269a096b2c
+
+*************************************************************************
+Deleting a Docker Image
+  docker image rm <image_id>
+  If the image is being used by a container, you can force its removal with the -f flag: docker image rm -f <image_id>
+
+*************************************************************************
