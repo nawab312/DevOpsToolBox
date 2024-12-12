@@ -1,0 +1,7 @@
+pip install --no-cache-dir -r requirements.txt
+  Specifies that the list of packages to be installed is in the file requirements.txt.
+  --no-cache-dir: Prevents pip from saving downloaded package files in its cache directory.
+                  By default, pip caches the downloaded files in a cache directory (e.g., ~/.cache/pip).
+                  With this flag, pip downloads packages afresh each time instead of reusing previously downloaded packages.
+
+***********************************************************************************************************************************************************
