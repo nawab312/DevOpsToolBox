@@ -24,18 +24,27 @@ git commit -m "prac1 added"
  create mode 100644 prac.txt
 ```
 ```bash
+siddharth312@siddharth312-GF65-Thin-9SD:~/git_practice/.git/refs/heads$ ls -lart
+total 12
+drwxrwxr-x 4 siddharth312 siddharth312 4096 Feb 19 21:13 ..
+-rw-rw-r-- 1 siddharth312 siddharth312   41 Feb 19 21:14 master
+drwxrwxr-x 2 siddharth312 siddharth312 4096 Feb 19 21:14 .
+```
+```bash
 ~/git_practice/.git/refs/heads$ cat master 
-7377f26d7e2a754e71a5f528d5c6e9094f385b50
+ead1ebb687492171b35384d32c7fab72916ce7a5
 ```
 Adds the URL of the remote repository to your local repository and Push the code to Remote Repo
 ```bash
 git remote add origin git@github.com:nawab312/Git-Practice.git
-git push origin main
 ```
 ```bash
-git_practice/.git/refs/heads$ ls -lart
-total 12
-drwxrwxr-x 4 siddharth312 siddharth312 4096 Feb 19 20:46 ..
--rw-rw-r-- 1 siddharth312 siddharth312   41 Feb 19 20:47 master
-drwxrwxr-x 2 siddharth312 siddharth312 4096 Feb 19 20:47 .
+git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:nawab312/Git_Practice.git
+ * [new branch]      master -> master
 ```
+
