@@ -72,7 +72,7 @@ index 0000000..8b13789
 @@ -0,0 +1 @@
 +
 ```
-**git diff master origin/master** output shows that a new file, prac1.txt, has been added to origin/master but is not yet present in your local master branch.
+**git diff master origin/master** output shows that a new file, prac1.txt, has been added to origin/master but is not yet present in your local master branch.<br>
 **Sync the Changes :** This will bring prac2.txt and any other changes into your local master
 ```bash
 git merge origin/master
