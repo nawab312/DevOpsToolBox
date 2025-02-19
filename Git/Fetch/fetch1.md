@@ -44,4 +44,8 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To github.com:nawab312/Git_Practice.git
  * [new branch]      master -> master
 ```
+```bash
+~/git_practice/.git/refs/remotes/origin$ cat master 
+ead1ebb687492171b35384d32c7fab72916ce7a5
+```
 
