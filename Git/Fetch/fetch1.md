@@ -24,11 +24,8 @@ git commit -m "prac1 added"
  create mode 100644 prac.txt
 ```
 ```bash
-siddharth312@siddharth312-GF65-Thin-9SD:~/git_practice/.git/refs/heads$ ls -lart
-total 12
-drwxrwxr-x 4 siddharth312 siddharth312 4096 Feb 19 21:13 ..
--rw-rw-r-- 1 siddharth312 siddharth312   41 Feb 19 21:14 master
-drwxrwxr-x 2 siddharth312 siddharth312 4096 Feb 19 21:14 .
+~/git_practice/.git/refs/heads$ ls -lart
+master
 ```
 ```bash
 ~/git_practice/.git/refs/heads$ cat master 
