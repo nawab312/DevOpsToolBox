@@ -61,6 +61,7 @@ From github.com:nawab312/Git_Practice
 git log master..origin/master --oneline --graph
 * 0d9d7f4 (origin/master) Create prac2.txt
 ```
+The above shows that prac2.txt was created in origin/master (Remote Repository)
 ```bash
 git diff master origin/master
 diff --git a/prac2.txt b/prac2.txt
