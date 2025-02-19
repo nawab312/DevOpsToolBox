@@ -24,10 +24,6 @@ git commit -m "prac1 added"
  create mode 100644 prac.txt
 ```
 ```bash
-~/git_practice/.git/refs/heads$ ls -lart
-master
-```
-```bash
 ~/git_practice/.git/refs/heads$ cat master 
 ead1ebb687492171b35384d32c7fab72916ce7a5
 ```
