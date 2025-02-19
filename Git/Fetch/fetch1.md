@@ -22,6 +22,7 @@ git commit -m "prac1 added"
 [master (root-commit) 7377f26] prac1 added
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 prac.txt
+```
 ```bash
 ~/git_practice/.git/refs/heads$ cat master 
 7377f26d7e2a754e71a5f528d5c6e9094f385b50
