@@ -31,3 +31,10 @@ Adds the URL of the remote repository to your local repository and Push the code
 git remote add origin git@github.com:nawab312/Git-Practice.git
 git push origin main
 ```
+```bash
+git_practice/.git/refs/heads$ ls -lart
+total 12
+drwxrwxr-x 4 siddharth312 siddharth312 4096 Feb 19 20:46 ..
+-rw-rw-r-- 1 siddharth312 siddharth312   41 Feb 19 20:47 master
+drwxrwxr-x 2 siddharth312 siddharth312 4096 Feb 19 20:47 .
+```
