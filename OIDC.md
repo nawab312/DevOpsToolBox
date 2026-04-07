@@ -11,6 +11,8 @@ There are 4 actors in every OIDC flow. Remember these:
 └─────────────┘   └─────────────┘   └─────────────┘   └─────────────┘
 ```
 
+---
+
 ### Phase 1: Setup (Done Once, Before Any User Logs In)
 
 Before a single user touches your login button, a *developer registers the app with the IdP*. This is where trust is established.
