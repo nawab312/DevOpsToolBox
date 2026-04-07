@@ -1,5 +1,7 @@
 ## The Complete OIDC Flow — From Click to Verified Identity
 
+OIDC is used for authentication — it allows applications to verify a user’s identity using an external Identity Provider like Google or Okta, typically through ID tokens (JWTs). It’s commonly used in SSO, social login, and cloud identity federation
+
 There are 4 actors in every OIDC flow. Remember these:
 
 ```
